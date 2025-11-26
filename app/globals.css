@@ -1,0 +1,110 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Custom Blue Palette Theme */
+:root {
+  /* User's Blue Palette */
+  --color-white-blue: #F0F3FA;
+  --color-light-blue-1: #D5DEEF;
+  --color-light-blue-2: #B1C9EF;
+  --color-medium-blue-1: #8AAEE0;
+  --color-medium-blue-2: #628ECB;
+  --color-dark-blue: #395886;
+
+  /* Theme Variables */
+  --background: #0f1419;
+  --foreground: #F0F3FA;
+  --card: #1a2332;
+  --card-foreground: #F0F3FA;
+  --primary: #628ECB;
+  --primary-foreground: #F0F3FA;
+  --secondary: #D5DEEF;
+  --secondary-foreground: #395886;
+  --muted: #2a3547;
+  --muted-foreground: #B1C9EF;
+  --accent: #8AAEE0;
+  --border: #395886;
+  --input: #2a3547;
+  --ring: #628ECB;
+  --radius: 0.75rem;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-lg: var(--radius);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-[#0f1419] via-[#1a2332] to-[#0f1419] text-foreground min-h-screen;
+  }
+}
+
+/* Section Backgrounds with Blue Palette */
+.section-dark {
+  background: linear-gradient(135deg, #1a2332 0%, #2a3547 50%, #1a2332 100%);
+}
+
+.section-dark-alt {
+  background: linear-gradient(135deg, #395886 0%, #628ECB 50%, #395886 100%);
+}
+
+.section-nude-dark {
+  background: linear-gradient(135deg, #2a3547 0%, #395886 50%, #2a3547 100%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f1419;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #628ECB 0%, #8AAEE0 100%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #395886 0%, #628ECB 100%);
+}
+
+/* Smooth transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glow effects with blue palette */
+.glow-blue {
+  box-shadow: 0 0 20px rgba(98, 142, 203, 0.4), 0 0 40px rgba(98, 142, 203, 0.2);
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #628ECB 0%, #8AAEE0 50%, #B1C9EF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

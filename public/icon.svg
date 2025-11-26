@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Black Circle Background -->
+  <circle cx="50" cy="50" r="48" fill="#000000" stroke="#1a1a1a" stroke-width="2"/>
+  
+  <!-- White Letters "WT" - Larger and Bolder -->
+  <text 
+    x="50" 
+    y="52" 
+    font-family="Arial, Helvetica, sans-serif" 
+    font-size="48" 
+    font-weight="900" 
+    fill="#FFFFFF" 
+    text-anchor="middle" 
+    dominant-baseline="central"
+    letter-spacing="-2">
+    WT
+  </text>
+</svg>
