@@ -8,25 +8,25 @@ import { Button } from "@/components/ui/button"
 import { GraduationCap, Briefcase, Code, Download } from "lucide-react"
 
 const education = [
-  { period: "En cours", institution: "EMSI", degree: "5ème année Ingénierie Informatique - MIAGE", status: "En cours" },
-  { period: "2020–2024", institution: "EMSI", degree: "Cycle Ingénieur - Réseaux Informatiques", status: "Complété" },
+  { period: "2021 – Présent", institution: "Ecole Marocaine Des Sciences De L'ingénieur (EMSI)", degree: "Cycle Ingénieur - 5ème année Ingénierie Informatique et Réseaux - MIAGE", status: "En cours" },
+  { period: "2018 – 2021", institution: "L.O. Ibn Souleimane Roudani", degree: "Baccalauréat", status: "Complété" },
 ]
 
 const experience = [
   {
-    year: "2024",
-    company: "Anouar Almostakbal",
-    role: "Développeur Full Stack",
+    year: "07/2025 – 08/2025",
+    company: "Anouar Almostakbal (Groupe Anouar Invest)",
+    role: "Stagiaire en Développement Full Stack",
     description:
-      "Développement d'application de gestion d'université. Backend Spring Boot, Frontend React. Conception architecture base de données.",
-    technologies: ["Spring Boot", "React", "MySQL", "Java"],
+      "Développement de BiscVIP - Solution de gestion intégrée (ERP) pour biscuiterie industrielle. Conception de la base de données et développement des modules de gestion.",
+    technologies: ["Java", "Spring Boot", "Database"],
   },
   {
-    year: "2023",
-    company: "Finatech Group",
-    role: "Stagiaire Réseaux & Sécurité",
-    description: "Installation et optimisation infrastructure réseau. Documentation technique. Analyse vulnérabilités et audits sécurité.",
-    technologies: ["Réseaux", "Sécurité", "Système"],
+    year: "07/2024",
+    company: "Finatech",
+    role: "Stagiaire en Observation - Equipe Network & Security",
+    description: "Participation à l'installation et à l'optimisation de l'infrastructure réseau. Rédige la documentation technique. Collaboration avec l'équipe pour analyser les vulnérabilités.",
+    technologies: ["Réseaux", "Sécurité", "Documentation"],
   },
 ]
 
